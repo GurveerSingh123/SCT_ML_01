@@ -39,8 +39,6 @@ The goal of this project is to build a regression model capable of accurately es
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Joblib
-
 ---
 
 # Machine Learning Workflow
@@ -70,12 +68,9 @@ Performed:
 
 Trained regression model using Scikit-learn.
 
-Possible algorithms:
+Algorithm used:
 
 - Linear Regression
-- Random Forest Regressor
-- Decision Tree Regressor
-- XGBoost Regressor
 
 ---
 
@@ -97,70 +92,11 @@ Possible algorithms:
 
 ---
 
-# Project Structure
-
-```text
-House-Price-Prediction/
-│
-├── data/
-│   └── House_price.csv
-│
-├── notebooks/
-│   └── house_price_prediction.ipynb
-│
-├── models/
-│   └── model.joblib
-│
-├── images/
-│   └── heatmap.png
-│
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── app.py
-```
-
----
-
-# Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# Run Project
-
-## Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-## Python File
-
-```bash
-python app.py
-```
-
----
-
-# Save Model Using Joblib
-
-```python
-from joblib import dump
-
-dump(model, 'house_price_model.joblib')
-```
-
----
 
 # Future Improvements
 
 - Deploy using Streamlit or Flask
 - Hyperparameter tuning
-- Feature engineering
 - Cross-validation
 - Add interactive dashboard using Power BI
 
@@ -171,50 +107,4 @@ dump(model, 'house_price_model.joblib')
 Gurveer Singh
 
 ---
-
-# .gitignore
-
-```gitignore
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual Environment
-venv/
-.env/
-env/
-
-# Jupyter Notebook
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# System Files
-.DS_Store
-Thumbs.db
-
-# Model Files
-*.joblib
-*.pkl
-
-# CSV files (optional)
-# *.csv
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-
-# Build files
-build/
-dist/
-*.egg-info/
-```
 
